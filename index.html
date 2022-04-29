@@ -12,23 +12,22 @@
     <div class="main">
         <div class="left-nav-menu">
             <div class="logo">
-                <span class="logo-img"></span>
-            </div>
-            <div class="logo-name">
-                <span class="logo-name text-align uppercase">TAKE</span>
-                <span class="logo-name text-align uppercase">COIN</span>
+                <img class="logo-img" src="image/logo.png" alt="Logo">
+                <div class="logo-name">
+                    <span class="logo-name">TAKER</span>
+                </div>
             </div>
             <div class="game-block">
-                <div class="game-link dice">
-                    <span class="game-logo"></span>
+                <div class="game-link">
+                    <span class="game-logo dice"></span>
                     <span class="game-name">Dice</span>
                 </div>
-                <div class="game-link mines">
-                    <span class="game-logo"></span>
+                <div class="game-link">
+                    <span class="game-logo mines"></span>
                     <span class="game-name">Mines</span>
                 </div>
-                <div class="game-link bubbles">
-                    <span class="game-logo"></span>
+                <div class="game-link">
+                    <span class="game-logo bubbles"></span>
                     <span class="game-name">Bubbles</span>
                 </div>
             </div>
@@ -37,24 +36,24 @@
                 <div class="info-social-network"></div> 
             </div>
         </div>
-        <div class="current-window container">
-            <div class="row container">
+        <div class="current-window container mt-1">
+            <div class="container">
                 <nav class="nav-menu col-12">
-                    <ul class="nav-list">
-                        <li class="list-item">Главная</li>
-                        <li class="list-item">FAQ</li>
-                    </ul>
+                    <div class="nav-list">
+                        <div class="list-item">Главная</div>
+                        <div class="list-item">FAQ</div>
+                    </div>
                     <div class="nav-btn">
-                        <a href="#" class="btn-link">
-                            <span class="btn-icon"></span>
-                            <span class="btn-name">Авторизация</span>
+                        <a href="#" class="btn-link btn blue btn-primary">
+                            <span class="vk-icon"></span>
+                            <span>Авторизация</span>
                         </a>
                     </div>
                 </nav>
             </div>
             <div class="game-window container mt-5">
                 <div class="content cards col-12 ml-auto mr-auto p-0">
-                    <div class="dice">
+                    <div class="dice-game">
                         <div class="content-body">
                             <div class="container rows align-items-center flex">
                                 <div class="col-4">
@@ -86,14 +85,122 @@
                             </div>
                             <div class="d-grid gap-2 btn-game-group">
                                 <button class="btn blue btn-game btn-primary" type="button">Играть</button>
-                                <button class="btn red btn-game btn-primary" type="button">Вы не авторизованы</button>
+                                <div class="noty error">
+                                    <div class="noty-text">Вы не авторизованы</div>
+                                </div>
                               </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="game-window container mt-5"></div>
-            <footer class="footer"></div>
+            <div class="container mt-5">
+                <div class="history cards content-body">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">ИГРА</th>
+                            <th scope="col">ЛОГИН</th>
+                            <th scope="col">СТАВКА</th>
+                            <th scope="col">Х</th>
+                            <th scope="col">ВЫИГРЫШ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <span class="game-icon dice"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon mines"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <span class="game-icon bubbles"></span>
+                            </th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>2.0</td>
+                            <td class="text-success">20.0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <footer class="footer container mt-5"></div>
         </div>
     </div>
 </body>

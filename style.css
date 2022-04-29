@@ -16,45 +16,54 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 .main{
-    height: 100vh;
     display: flex;
     background-image: url("image/background.jpg");
+    background-repeat: repeat;
     background-size: cover;
 }
 .left-nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     width: 80px;
     height: 100vh;
     background-color: white;
-    align-items: center;
+    padding-top: 20px;
 }
 .logo{
     display: flex;
     flex-direction: column;
     height: 60px;
-    width: 40px;
-    margin: auto;
-    padding-top: 15px;
+    width: 45px;
+    margin-bottom: 40px;
 }
 .logo-img{
     width: 100%;
     height: 100%;
-    margin: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('image/logo.png');
 }
 .logo-name{
     display: block;
 }
 .game-block{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .game-link{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
     
+}
+
+.game-logo{
+    height: 28px;
+    width: 28px;
 }
 .current-window{
     padding-left: 80px;
@@ -66,6 +75,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .nav-list{
     display: flex;
+    align-items: center;
     text-decoration: none;
     list-style: none;
 }
@@ -166,10 +176,66 @@ button {
     border-color: #fb6868;
     background-image: linear-gradient(45deg,#fb6868,#ff3434);
 }
-.red:hover{
-    border-color: #fb6868;
-}
+
 .gap-2{
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
+}
+.table {
+    width: 800px!important;
+    min-width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 12px 0;
+}
+
+.noty{
+    display: flex;
+    width: 100%;
+    border-radius: 3px;
+    height: 50px;
+}
+.noty-text{
+    margin: auto;
+    color: #fff;
+}
+.error{
+    background-image: linear-gradient(45deg,#fb6868,#ff3434);
+}
+.success{
+    background-image: linear-gradient(45deg,#38d461,#11ca4a);
+}
+.game-icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2.5px;
+    height: 20px;
+    width: 20px;
+}
+.dice{
+    background-image: url(image/dice.svg);
+}
+.bubbles{
+    background-image: url(image/bubbles.svg);
+}
+.mines{
+    background-image: url(image/mines.svg);
+}
+.btn-link{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    justify-content:space-between;
+    align-items: center;
+}
+.vk-icon{
+    background: url(image/vk_white.svg);
+    height: 20px;
+    width: 20px;
 }
